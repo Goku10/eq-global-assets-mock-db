@@ -1,0 +1,2128 @@
+{
+  "metadata": {
+    "title": "Equinor Global Assets Database",
+    "description": "Comprehensive dataset of Equinor's onshore and offshore assets with operational details and geographic coordinates",
+    "version": "1.0",
+    "last_updated": "2025-09-19",
+    "total_assets": 59,
+    "countries": 6,
+    "asset_types": 14,
+    "data_sources": [
+      "Equinor Annual Reports",
+      "Norwegian Petroleum Directorate",
+      "Official Equinor Asset Pages",
+      "Industry Databases",
+      "Regulatory Filings"
+    ]
+  },
+  "summary_statistics": {
+    "assets_by_country": {
+      "Norway": 35,
+      "Brazil": 8,
+      "UK": 8,
+      "USA": 4,
+      "Poland": 3,
+      "Germany": 1
+    },
+    "assets_by_type": {
+      "Oil Field": 23,
+      "Gas Field": 9,
+      "Offshore Wind Farm": 9,
+      "Solar Plant": 5,
+      "Gas Processing Plant": 2,
+      "Floating Wind Farm": 2,
+      "Oil Terminal": 2,
+      "LNG Terminal": 1,
+      "Refinery": 1,
+      "Methanol Plant": 1,
+      "Gas Project": 1,
+      "NGL Plant": 1,
+      "Oil Development": 1,
+      "Oil Platform": 1
+    },
+    "assets_by_status": {
+      "Operational": 49,
+      "Under Development": 5,
+      "Under Construction": 2,
+      "Decommissioned": 1,
+      "Operational (being sold)": 1,
+      "Pre-construction": 1
+    },
+    "production_types": {
+      "Oil": 27,
+      "Electricity": 16,
+      "Gas": 12,
+      "Refined Products": 1,
+      "Methanol": 1,
+      "LNG": 1,
+      "Multiple": 1
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "EQN_001",
+      "basic_info": {
+        "name": "Johan Sverdrup",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea, Utsira High",
+        "coordinates": {
+          "latitude": 60.833,
+          "longitude": 2.167
+        },
+        "water_depth": "110-120m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "755,000 bbl/day",
+        "year_commissioned": 2019,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "2,500"
+      },
+      "ownership": {
+        "equinor_share": "42.6%",
+        "primary_contact": "Asset Manager - Johan Sver..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_002",
+      "basic_info": {
+        "name": "Troll",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.645,
+          "longitude": 3.726
+        },
+        "water_depth": "303m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "145 MMscf/day",
+        "year_commissioned": 1995,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "1,800"
+      },
+      "ownership": {
+        "equinor_share": "30.58%",
+        "primary_contact": "Asset Manager - Troll..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_003",
+      "basic_info": {
+        "name": "Sleipner",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 58.367,
+          "longitude": 1.917
+        },
+        "water_depth": "82m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "300 kboe/day",
+        "year_commissioned": 1996,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "450"
+      },
+      "ownership": {
+        "equinor_share": "33.53%",
+        "primary_contact": "Asset Manager - Sleipner..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_004",
+      "basic_info": {
+        "name": "Gullfaks",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea, Tampen Area",
+        "coordinates": {
+          "latitude": 61.215,
+          "longitude": 2.28
+        },
+        "water_depth": "130-230m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "250,000 bbl/day",
+        "year_commissioned": 1986,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "850"
+      },
+      "ownership": {
+        "equinor_share": "51%",
+        "primary_contact": "Asset Manager - Gullfaks..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_005",
+      "basic_info": {
+        "name": "Oseberg",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.492,
+          "longitude": 2.827
+        },
+        "water_depth": "100m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "88,820 bbl/day",
+        "year_commissioned": 1988,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "650"
+      },
+      "ownership": {
+        "equinor_share": "49.3%",
+        "primary_contact": "Asset Manager - Oseberg..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_006",
+      "basic_info": {
+        "name": "Statfjord",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.256,
+          "longitude": 1.854
+        },
+        "water_depth": "145m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "70,000 bbl/day",
+        "year_commissioned": 1979,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "31.68%",
+        "primary_contact": "Asset Manager - Statfjord..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_007",
+      "basic_info": {
+        "name": "Heidrun",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea, Haltenbanken",
+        "coordinates": {
+          "latitude": 65.333,
+          "longitude": 6.917
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "60,000 bbl/day",
+        "year_commissioned": 1995,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "600"
+      },
+      "ownership": {
+        "equinor_share": "34.4%",
+        "primary_contact": "Asset Manager - Heidrun..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_008",
+      "basic_info": {
+        "name": "Kristin",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea, Haltenbanken",
+        "coordinates": {
+          "latitude": 63.967,
+          "longitude": 6.05
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "125,000 bcpd + 18 MMscm/day gas",
+        "year_commissioned": 2005,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "350"
+      },
+      "ownership": {
+        "equinor_share": "44.56%",
+        "primary_contact": "Asset Manager - Kristin..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_009",
+      "basic_info": {
+        "name": "Snøhvit",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Barents Sea",
+        "coordinates": {
+          "latitude": 71.6,
+          "longitude": 21.0
+        },
+        "water_depth": "300-350m",
+        "nearby_cities": "Hammerfest, Tromsø"
+      },
+      "operational_data": {
+        "production_capacity": "6.5 bcm/year gas",
+        "year_commissioned": 2007,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "200"
+      },
+      "ownership": {
+        "equinor_share": "36.79%",
+        "primary_contact": "Asset Manager - Snøhvit..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_010",
+      "basic_info": {
+        "name": "Kvitebjørn",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.05,
+          "longitude": 2.48
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "50,000 bbl/day",
+        "year_commissioned": 2004,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "250"
+      },
+      "ownership": {
+        "equinor_share": "45%",
+        "primary_contact": "Asset Manager - Kvitebjørn..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_011",
+      "basic_info": {
+        "name": "Visund",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.38,
+          "longitude": 2.73
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "35,000 bbl/day",
+        "year_commissioned": 1999,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "150"
+      },
+      "ownership": {
+        "equinor_share": "35%",
+        "primary_contact": "Asset Manager - Visund..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_012",
+      "basic_info": {
+        "name": "Brage",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.78,
+          "longitude": 2.12
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "25,000 bbl/day",
+        "year_commissioned": 1993,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "120"
+      },
+      "ownership": {
+        "equinor_share": "45%",
+        "primary_contact": "Asset Manager - Brage..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_013",
+      "basic_info": {
+        "name": "Heimdal",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 59.55,
+          "longitude": 2.38
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "15 MMscm/day",
+        "year_commissioned": 1985,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "180"
+      },
+      "ownership": {
+        "equinor_share": "35%",
+        "primary_contact": "Asset Manager - Heimdal..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_014",
+      "basic_info": {
+        "name": "Grane",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 58.43,
+          "longitude": 2.05
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "40,000 bbl/day",
+        "year_commissioned": 1993,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "200"
+      },
+      "ownership": {
+        "equinor_share": "40%",
+        "primary_contact": "Asset Manager - Grane..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_015",
+      "basic_info": {
+        "name": "Glitne",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 59.22,
+          "longitude": 2.88
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "20,000 bbl/day",
+        "year_commissioned": 1998,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "100"
+      },
+      "ownership": {
+        "equinor_share": "30%",
+        "primary_contact": "Asset Manager - Glitne..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_016",
+      "basic_info": {
+        "name": "Huldra",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea",
+        "coordinates": {
+          "latitude": 65.15,
+          "longitude": 6.25
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "12 MMscm/day",
+        "year_commissioned": 1999,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "150"
+      },
+      "ownership": {
+        "equinor_share": "38%",
+        "primary_contact": "Asset Manager - Huldra..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_017",
+      "basic_info": {
+        "name": "Mikkel",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.88,
+          "longitude": 2.38
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "8,000 bbl/day",
+        "year_commissioned": 2001,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "80"
+      },
+      "ownership": {
+        "equinor_share": "25%",
+        "primary_contact": "Asset Manager - Mikkel..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_018",
+      "basic_info": {
+        "name": "Njord",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea",
+        "coordinates": {
+          "latitude": 64.78,
+          "longitude": 8.07
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "30,000 bbl/day",
+        "year_commissioned": 1995,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "200"
+      },
+      "ownership": {
+        "equinor_share": "17.5%",
+        "primary_contact": "Asset Manager - Njord..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_019",
+      "basic_info": {
+        "name": "Norne",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea",
+        "coordinates": {
+          "latitude": 66.02,
+          "longitude": 12.89
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "25,000 bbl/day",
+        "year_commissioned": 1997,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "180"
+      },
+      "ownership": {
+        "equinor_share": "50%",
+        "primary_contact": "Asset Manager - Norne..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_020",
+      "basic_info": {
+        "name": "Ormen Lange",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea",
+        "coordinates": {
+          "latitude": 64.65,
+          "longitude": 5.62
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "70 MMscm/day",
+        "year_commissioned": 2007,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "300"
+      },
+      "ownership": {
+        "equinor_share": "35%",
+        "primary_contact": "Asset Manager - Ormen Lang..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_021",
+      "basic_info": {
+        "name": "Vigdis",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.38,
+          "longitude": 2.73
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "15,000 bbl/day",
+        "year_commissioned": 1986,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "100"
+      },
+      "ownership": {
+        "equinor_share": "35%",
+        "primary_contact": "Asset Manager - Vigdis..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_022",
+      "basic_info": {
+        "name": "Veslefrikk",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.12,
+          "longitude": 2.13
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "18,000 bbl/day",
+        "year_commissioned": 1989,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "150"
+      },
+      "ownership": {
+        "equinor_share": "32%",
+        "primary_contact": "Asset Manager - Veslefrikk..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_023",
+      "basic_info": {
+        "name": "Sygna",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 61.25,
+          "longitude": 1.854
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "12,000 bbl/day",
+        "year_commissioned": 1985,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "31.68%",
+        "primary_contact": "Asset Manager - Sygna..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_024",
+      "basic_info": {
+        "name": "Tordis",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.82,
+          "longitude": 2.28
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "35,000 bbl/day",
+        "year_commissioned": 1994,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "120"
+      },
+      "ownership": {
+        "equinor_share": "15%",
+        "primary_contact": "Asset Manager - Tordis..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_025",
+      "basic_info": {
+        "name": "Volve",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 58.45,
+          "longitude": 1.88
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "Decommissioned",
+        "year_commissioned": 2008,
+        "current_status": "Decommissioned",
+        "development_phase": "Decommissioned",
+        "estimated_workforce": "0"
+      },
+      "ownership": {
+        "equinor_share": "100% (decommissioned)",
+        "primary_contact": "Asset Manager - Volve..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_026",
+      "basic_info": {
+        "name": "Åsgard",
+        "type": "Gas Field",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Norwegian Sea",
+        "coordinates": {
+          "latitude": 65.15,
+          "longitude": 6.05
+        },
+        "water_depth": "300-400m",
+        "nearby_cities": "Trondheim, Kristiansund"
+      },
+      "operational_data": {
+        "production_capacity": "250 MMscf/day",
+        "year_commissioned": 1999,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "20%",
+        "primary_contact": "Asset Manager - Åsgard..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_027",
+      "basic_info": {
+        "name": "Mongstad Refinery",
+        "type": "Refinery",
+        "classification": "Onshore",
+        "production_type": "Refined Products"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Mongstad, Vestland",
+        "coordinates": {
+          "latitude": 60.809,
+          "longitude": 5.029
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "12 million tonnes/year",
+        "year_commissioned": 1975,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "750"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Mongstad R..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "Variable",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_028",
+      "basic_info": {
+        "name": "Kollsnes Gas Processing Plant",
+        "type": "Gas Processing Plant",
+        "classification": "Onshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Øygarden, Vestland",
+        "coordinates": {
+          "latitude": 60.549,
+          "longitude": 4.837
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "156 MMscm/day",
+        "year_commissioned": 1996,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "350"
+      },
+      "ownership": {
+        "equinor_share": "Technical Service Provider",
+        "primary_contact": "Asset Manager - Kollsnes G..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_029",
+      "basic_info": {
+        "name": "Kårstø Processing Plant",
+        "type": "Gas Processing Plant",
+        "classification": "Onshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Kårstø, Rogaland",
+        "coordinates": {
+          "latitude": 59.275,
+          "longitude": 5.503
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Stavanger, Haugesund"
+      },
+      "operational_data": {
+        "production_capacity": "98 MMscm/day",
+        "year_commissioned": 1985,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "Technical Service Provider",
+        "primary_contact": "Asset Manager - Kårstø Pro..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_030",
+      "basic_info": {
+        "name": "Tjeldbergodden Methanol Plant",
+        "type": "Methanol Plant",
+        "classification": "Onshore",
+        "production_type": "Methanol"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Tjeldbergodden, Møre og Romsdal",
+        "coordinates": {
+          "latitude": 63.717,
+          "longitude": 8.567
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Kristiansund, Ålesund"
+      },
+      "operational_data": {
+        "production_capacity": "900,000 tonnes methanol/year",
+        "year_commissioned": 1997,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "180"
+      },
+      "ownership": {
+        "equinor_share": "82.01%",
+        "primary_contact": "Asset Manager - Tjeldbergo..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0.3 t CO2/t methanol",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_031",
+      "basic_info": {
+        "name": "Melkøya LNG Terminal",
+        "type": "LNG Terminal",
+        "classification": "Onshore",
+        "production_type": "LNG"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Melkøya, Hammerfest",
+        "coordinates": {
+          "latitude": 70.685,
+          "longitude": 23.59
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Stavanger"
+      },
+      "operational_data": {
+        "production_capacity": "4.2 mtpa LNG",
+        "year_commissioned": 2007,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "120"
+      },
+      "ownership": {
+        "equinor_share": "36.79%",
+        "primary_contact": "Asset Manager - Melkøya LN..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0.3 t CO2/t LNG",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_032",
+      "basic_info": {
+        "name": "Sture Terminal",
+        "type": "Oil Terminal",
+        "classification": "Onshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Øygarden, Vestland",
+        "coordinates": {
+          "latitude": 60.517,
+          "longitude": 4.85
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "765,000 bbl/day",
+        "year_commissioned": 1991,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "200"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Sture Term..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_033",
+      "basic_info": {
+        "name": "Mongstad Oil Terminal",
+        "type": "Oil Terminal",
+        "classification": "Onshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Mongstad, Vestland",
+        "coordinates": {
+          "latitude": 60.809,
+          "longitude": 5.029
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "9.4 million barrels storage",
+        "year_commissioned": 1975,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "100"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Mongstad O..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_034",
+      "basic_info": {
+        "name": "Vestprosess NGL Plant",
+        "type": "NGL Plant",
+        "classification": "Onshore",
+        "production_type": "Multiple"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "Mongstad, Vestland",
+        "coordinates": {
+          "latitude": 60.809,
+          "longitude": 5.029
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "0.34 million tonnes LPG/year",
+        "year_commissioned": 1989,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "80"
+      },
+      "ownership": {
+        "equinor_share": "34%",
+        "primary_contact": "Asset Manager - Vestproses..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "Variable",
+        "certifications": "ISO 14001"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_035",
+      "basic_info": {
+        "name": "Peregrino",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Campos Basin, Rio de Janeiro",
+        "coordinates": {
+          "latitude": -22.58,
+          "longitude": -40.12
+        },
+        "water_depth": "100-400m",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "110,000 bbl/day",
+        "year_commissioned": 2011,
+        "current_status": "Operational (being sold)",
+        "development_phase": "Unknown",
+        "estimated_workforce": "800"
+      },
+      "ownership": {
+        "equinor_share": "60% (being sold)",
+        "primary_contact": "Asset Manager - Peregrino..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_036",
+      "basic_info": {
+        "name": "Bacalhau",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Santos Basin",
+        "coordinates": {
+          "latitude": -25.22,
+          "longitude": -42.85
+        },
+        "water_depth": "100-400m",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "200,000 bbl/day target",
+        "year_commissioned": 2024,
+        "current_status": "Under Development",
+        "development_phase": "Development",
+        "estimated_workforce": "1,200"
+      },
+      "ownership": {
+        "equinor_share": "50%",
+        "primary_contact": "Asset Manager - Bacalhau..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_037",
+      "basic_info": {
+        "name": "Roncador",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Campos Basin",
+        "coordinates": {
+          "latitude": -22.39,
+          "longitude": -39.87
+        },
+        "water_depth": "100-400m",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "Partner asset",
+        "year_commissioned": 2007,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "Partner operated"
+      },
+      "ownership": {
+        "equinor_share": "Partner",
+        "primary_contact": "Asset Manager - Roncador..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_038",
+      "basic_info": {
+        "name": "Raia Gas Project",
+        "type": "Gas Project",
+        "classification": "Offshore",
+        "production_type": "Gas"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Campos Basin",
+        "coordinates": {
+          "latitude": -22.45,
+          "longitude": -40.25
+        },
+        "water_depth": "100-400m",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "Development phase",
+        "year_commissioned": 2025,
+        "current_status": "Under Development",
+        "development_phase": "Development",
+        "estimated_workforce": "Development"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Raia Gas P..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "2-5 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_039",
+      "basic_info": {
+        "name": "Serra da Babilônia Solar Complex",
+        "type": "Solar Plant",
+        "classification": "Onshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Bahia State",
+        "coordinates": {
+          "latitude": -10.8,
+          "longitude": -37.2
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "140 MW",
+        "year_commissioned": 2024,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "45"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Serra da B..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_040",
+      "basic_info": {
+        "name": "Vito Platform",
+        "type": "Oil Platform",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "USA",
+        "region": "Gulf of Mexico",
+        "coordinates": {
+          "latitude": 28.95,
+          "longitude": -88.45
+        },
+        "water_depth": "1,000-2,000m",
+        "nearby_cities": "New Orleans, Houston"
+      },
+      "operational_data": {
+        "production_capacity": "100,000 boe/day",
+        "year_commissioned": 2023,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "Partner operated"
+      },
+      "ownership": {
+        "equinor_share": "36.89%",
+        "primary_contact": "Asset Manager - Vito Platf..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_041",
+      "basic_info": {
+        "name": "Sparta Development",
+        "type": "Oil Development",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "USA",
+        "region": "Gulf of Mexico",
+        "coordinates": {
+          "latitude": 28.75,
+          "longitude": -88.25
+        },
+        "water_depth": "1,000-2,000m",
+        "nearby_cities": "New Orleans, Houston"
+      },
+      "operational_data": {
+        "production_capacity": "100,000 boe/day peak",
+        "year_commissioned": 2028,
+        "current_status": "Under Development",
+        "development_phase": "Development",
+        "estimated_workforce": "Development"
+      },
+      "ownership": {
+        "equinor_share": "49%",
+        "primary_contact": "Asset Manager - Sparta Dev..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_042",
+      "basic_info": {
+        "name": "Titan Field",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "USA",
+        "region": "Gulf of Mexico",
+        "coordinates": {
+          "latitude": 28.85,
+          "longitude": -88.35
+        },
+        "water_depth": "1,000-2,000m",
+        "nearby_cities": "New Orleans, Houston"
+      },
+      "operational_data": {
+        "production_capacity": "130,000 bbl/day",
+        "year_commissioned": 2019,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "Partner operated"
+      },
+      "ownership": {
+        "equinor_share": "Partner",
+        "primary_contact": "Asset Manager - Titan Fiel..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_043",
+      "basic_info": {
+        "name": "St. Malo Field",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "USA",
+        "region": "Gulf of Mexico",
+        "coordinates": {
+          "latitude": 28.42,
+          "longitude": -88.15
+        },
+        "water_depth": "1,000-2,000m",
+        "nearby_cities": "New Orleans, Houston"
+      },
+      "operational_data": {
+        "production_capacity": "150,000 bbl/day",
+        "year_commissioned": 2023,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "Partner operated"
+      },
+      "ownership": {
+        "equinor_share": "Partner",
+        "primary_contact": "Asset Manager - St. Malo F..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_044",
+      "basic_info": {
+        "name": "Mariner Field (UK)",
+        "type": "Oil Field",
+        "classification": "Offshore",
+        "production_type": "Oil"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea",
+        "coordinates": {
+          "latitude": 60.85,
+          "longitude": 1.58
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "25,000-30,000 bbl/day",
+        "year_commissioned": 2019,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "200"
+      },
+      "ownership": {
+        "equinor_share": "80%",
+        "primary_contact": "Asset Manager - Mariner Fi..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "8-15 kg/boe",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_045",
+      "basic_info": {
+        "name": "Dogger Bank Wind Farm A",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea, Yorkshire Coast",
+        "coordinates": {
+          "latitude": 55.21,
+          "longitude": 2.33
+        },
+        "water_depth": "25-35m",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "1,200 MW",
+        "year_commissioned": 2023,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "40%",
+        "primary_contact": "Asset Manager - Dogger Ban..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_046",
+      "basic_info": {
+        "name": "Dogger Bank Wind Farm B",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea, Yorkshire Coast",
+        "coordinates": {
+          "latitude": 55.21,
+          "longitude": 2.33
+        },
+        "water_depth": "25-35m",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "1,200 MW",
+        "year_commissioned": 2026,
+        "current_status": "Under Construction",
+        "development_phase": "Construction",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "40%",
+        "primary_contact": "Asset Manager - Dogger Ban..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_047",
+      "basic_info": {
+        "name": "Dogger Bank Wind Farm C",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea, Yorkshire Coast",
+        "coordinates": {
+          "latitude": 55.21,
+          "longitude": 2.33
+        },
+        "water_depth": "25-35m",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "1,200 MW",
+        "year_commissioned": 2026,
+        "current_status": "Under Construction",
+        "development_phase": "Construction",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "40%",
+        "primary_contact": "Asset Manager - Dogger Ban..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_048",
+      "basic_info": {
+        "name": "Dogger Bank Wind Farm D",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea, Yorkshire Coast",
+        "coordinates": {
+          "latitude": 55.21,
+          "longitude": 2.33
+        },
+        "water_depth": "25-35m",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "1,320 MW",
+        "year_commissioned": 2029,
+        "current_status": "Pre-construction",
+        "development_phase": "Pre-construction",
+        "estimated_workforce": "400"
+      },
+      "ownership": {
+        "equinor_share": "50%",
+        "primary_contact": "Asset Manager - Dogger Ban..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_049",
+      "basic_info": {
+        "name": "Hywind Scotland",
+        "type": "Floating Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "North Sea, Aberdeenshire",
+        "coordinates": {
+          "latitude": 57.483,
+          "longitude": -1.35
+        },
+        "water_depth": "220m (floating)",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "30 MW",
+        "year_commissioned": 2017,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "25"
+      },
+      "ownership": {
+        "equinor_share": "75%",
+        "primary_contact": "Asset Manager - Hywind Sco..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_050",
+      "basic_info": {
+        "name": "Sheringham Shoal Wind Farm",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "Norfolk Coast",
+        "coordinates": {
+          "latitude": 52.95,
+          "longitude": 1.58
+        },
+        "water_depth": "Unknown",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "317 MW",
+        "year_commissioned": 2012,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "50"
+      },
+      "ownership": {
+        "equinor_share": "40%",
+        "primary_contact": "Asset Manager - Sheringham..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_051",
+      "basic_info": {
+        "name": "Dudgeon Wind Farm",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "UK",
+        "region": "Norfolk Coast",
+        "coordinates": {
+          "latitude": 52.89,
+          "longitude": 1.61
+        },
+        "water_depth": "Unknown",
+        "nearby_cities": "Aberdeen, Great Yarmouth"
+      },
+      "operational_data": {
+        "production_capacity": "402 MW",
+        "year_commissioned": 2017,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "45"
+      },
+      "ownership": {
+        "equinor_share": "35%",
+        "primary_contact": "Asset Manager - Dudgeon Wi..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_052",
+      "basic_info": {
+        "name": "Hywind Tampen",
+        "type": "Floating Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Norway",
+        "region": "North Sea, Tampen Area",
+        "coordinates": {
+          "latitude": 60.645,
+          "longitude": 3.726
+        },
+        "water_depth": "50-150m",
+        "nearby_cities": "Stavanger, Bergen"
+      },
+      "operational_data": {
+        "production_capacity": "88 MW",
+        "year_commissioned": 2022,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "100"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Hywind Tam..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "ISO 14001, OSPAR"
+      },
+      "data_quality": "High"
+    },
+    {
+      "asset_id": "EQN_053",
+      "basic_info": {
+        "name": "Arkona Wind Farm (Germany)",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Germany",
+        "region": "Baltic Sea",
+        "coordinates": {
+          "latitude": 54.47,
+          "longitude": 14.12
+        },
+        "water_depth": "20-40m",
+        "nearby_cities": "Hamburg, Bremen"
+      },
+      "operational_data": {
+        "production_capacity": "385 MW (25% stake)",
+        "year_commissioned": 2019,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "Partner operated"
+      },
+      "ownership": {
+        "equinor_share": "25%",
+        "primary_contact": "Asset Manager - Arkona Win..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_054",
+      "basic_info": {
+        "name": "Bałtyk Środkowy III (Poland)",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Poland",
+        "region": "Baltic Sea",
+        "coordinates": {
+          "latitude": 54.85,
+          "longitude": 16.85
+        },
+        "water_depth": "20-40m",
+        "nearby_cities": "Gdansk, Warsaw"
+      },
+      "operational_data": {
+        "production_capacity": "600 MW (50% stake)",
+        "year_commissioned": 2027,
+        "current_status": "Under Development",
+        "development_phase": "Development",
+        "estimated_workforce": "Development"
+      },
+      "ownership": {
+        "equinor_share": "50%",
+        "primary_contact": "Asset Manager - Bałtyk Śro..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_055",
+      "basic_info": {
+        "name": "Bałtyk Środkowy II (Poland)",
+        "type": "Offshore Wind Farm",
+        "classification": "Offshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Poland",
+        "region": "Baltic Sea",
+        "coordinates": {
+          "latitude": 54.85,
+          "longitude": 16.85
+        },
+        "water_depth": "20-40m",
+        "nearby_cities": "Gdansk, Warsaw"
+      },
+      "operational_data": {
+        "production_capacity": "600 MW (50% stake)",
+        "year_commissioned": 2027,
+        "current_status": "Under Development",
+        "development_phase": "Development",
+        "estimated_workforce": "Development"
+      },
+      "ownership": {
+        "equinor_share": "50%",
+        "primary_contact": "Asset Manager - Bałtyk Śro..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_056",
+      "basic_info": {
+        "name": "Stępień Solar Plant (Poland)",
+        "type": "Solar Plant",
+        "classification": "Onshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Poland",
+        "region": "Masovian Voivodeship",
+        "coordinates": {
+          "latitude": 52.23,
+          "longitude": 21.45
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Gdansk, Warsaw"
+      },
+      "operational_data": {
+        "production_capacity": "58 MW",
+        "year_commissioned": 2021,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "15"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Stępień So..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_057",
+      "basic_info": {
+        "name": "Scatec Solar Brazil",
+        "type": "Solar Plant",
+        "classification": "Onshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Rio Grande do Norte",
+        "coordinates": {
+          "latitude": -5.18,
+          "longitude": -37.12
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "162 MW",
+        "year_commissioned": 2018,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "25"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Scatec Sol..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_058",
+      "basic_info": {
+        "name": "Apodi Solar Brazil",
+        "type": "Solar Plant",
+        "classification": "Onshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Rio Grande do Norte",
+        "coordinates": {
+          "latitude": -5.04,
+          "longitude": -37.05
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "133 MW",
+        "year_commissioned": 2018,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "20"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Apodi Sola..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    },
+    {
+      "asset_id": "EQN_059",
+      "basic_info": {
+        "name": "Mendubim Solar Brazil",
+        "type": "Solar Plant",
+        "classification": "Onshore",
+        "production_type": "Electricity"
+      },
+      "location": {
+        "country": "Brazil",
+        "region": "Rio Grande do Norte",
+        "coordinates": {
+          "latitude": -5.33,
+          "longitude": -36.88
+        },
+        "water_depth": "N/A - Onshore",
+        "nearby_cities": "Rio de Janeiro, Macaé"
+      },
+      "operational_data": {
+        "production_capacity": "149 MW",
+        "year_commissioned": 2019,
+        "current_status": "Operational",
+        "development_phase": "Production",
+        "estimated_workforce": "30"
+      },
+      "ownership": {
+        "equinor_share": "100%",
+        "primary_contact": "Asset Manager - Mendubim S..."
+      },
+      "environmental": {
+        "co2_emissions_intensity": "0 kg/MWh",
+        "certifications": "Local Standards"
+      },
+      "data_quality": "Medium"
+    }
+  ]
+}
