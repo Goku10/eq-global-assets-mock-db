@@ -45,36 +45,42 @@ export const GeospatialMap: React.FC<GeospatialMapProps> = ({
       <MapContainer
         center={mapCenter}
         zoom={mapZoom}
-        className="w-full h-full neon-border"
-        style={{ background: '#0a0e1a', borderRadius: '2px' }}
+        className="w-full h-full rounded-lg"
         zoomControl={false}
       >
         <ZoomControl position="topright" />
         <MapController selectedAssetId={selectedAssetId} assets={assets} />
-
+        
         <LayersControl position="topleft">
-          <LayersControl.BaseLayer checked name="TACTICAL DARK">
-            <TileLayer
-              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-              maxZoom={20}
-              className="map-filter-blue"
-            />
-          </LayersControl.BaseLayer>
-
-          <LayersControl.BaseLayer name="SATELLITE OPS">
+          <LayersControl.BaseLayer checked name="ESRI Satellite">
             <TileLayer
               url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
               attribution="&copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
               maxZoom={18}
             />
           </LayersControl.BaseLayer>
-
-          <LayersControl.BaseLayer name="TACTICAL GRID">
+          
+          <LayersControl.BaseLayer name="OpenStreetMap">
             <TileLayer
-              url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-              maxZoom={20}
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+              maxZoom={19}
+            />
+          </LayersControl.BaseLayer>
+          
+          <LayersControl.BaseLayer name="ESRI Streets">
+            <TileLayer
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+              attribution="&copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom"
+              maxZoom={18}
+            />
+          </LayersControl.BaseLayer>
+          
+          <LayersControl.BaseLayer name="ESRI Topographic">
+            <TileLayer
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+              attribution="&copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community"
+              maxZoom={18}
             />
           </LayersControl.BaseLayer>
         </LayersControl>
@@ -83,13 +89,10 @@ export const GeospatialMap: React.FC<GeospatialMapProps> = ({
           <AssetMarker
             key={asset.asset_id}
             asset={asset}
-            color={assetTypeColors[asset.basic_info.type] || '#00d9ff'}
+            color={assetTypeColors[asset.basic_info.type] || '#666666'}
           />
         ))}
       </MapContainer>
-
-      {/* Tactical Grid Overlay */}
-      <div className="absolute inset-0 pointer-events-none grid-overlay opacity-20 rounded-sm" style={{ mixBlendMode: 'overlay' }}></div>
     </div>
   );
 };

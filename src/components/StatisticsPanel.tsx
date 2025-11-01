@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Globe, Crosshair, Activity } from 'lucide-react';
+import { BarChart3, Globe, Factory, Power } from 'lucide-react';
 import { Asset } from '../types/assets';
 import { calculateStatistics } from '../utils/assetUtils';
 
@@ -12,70 +12,70 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({ assets, filter
   const totalStats = calculateStatistics(assets);
   const filteredStats = calculateStatistics(filteredAssets);
 
-  const StatCard = ({
-    icon: Icon,
-    title,
-    value,
-    filteredValue,
-    color
-  }: {
-    icon: React.ComponentType<any>,
-    title: string,
-    value: number,
-    filteredValue: number,
-    color: string
+  const StatCard = ({ 
+    icon: Icon, 
+    title, 
+    value, 
+    filteredValue, 
+    color 
+  }: { 
+    icon: React.ComponentType<any>, 
+    title: string, 
+    value: number, 
+    filteredValue: number, 
+    color: string 
   }) => (
-    <div className="glass-panel p-4 border-l-2 hover:border-l-4 transition-all" style={{ borderColor: color }}>
-      <div className="flex items-center justify-between">
+    <div className="bg-white rounded-lg shadow-md p-4 border-l-4" style={{ borderColor: color }}>
+      <div className="flex items-center">
+        <Icon className="h-8 w-8 mr-3" style={{ color }} />
         <div>
-          <p className="text-[10px] font-bold text-[#00d9ff]/70 tracking-widest uppercase mb-1" style={{ fontFamily: 'Orbitron, sans-serif' }}>{title}</p>
-          <p className="text-3xl font-bold mission-clock" style={{ color, fontFamily: 'Orbitron, sans-serif' }}>
+          <p className="text-sm font-medium text-gray-600">{title}</p>
+          <p className="text-2xl font-bold text-gray-900">
             {filteredValue}
             {filteredValue !== value && (
-              <span className="text-sm text-[#00d9ff]/50 font-normal ml-1">/ {value}</span>
+              <span className="text-sm text-gray-500 font-normal ml-1">/ {value}</span>
             )}
           </p>
         </div>
-        <Icon className="h-10 w-10 opacity-30" style={{ color }} />
       </div>
     </div>
   );
 
   return (
-    <div>
+    <div className="mb-6">
       <div className="flex items-center mb-4">
-        <Activity className="h-5 w-5 text-[#ffd000] mr-2" />
-        <h3 className="text-sm font-bold text-[#00d9ff] tracking-widest uppercase" style={{ fontFamily: 'Orbitron, sans-serif' }}>TACTICAL OVERVIEW</h3>
+        <BarChart3 className="h-5 w-5 text-blue-600 mr-2" />
+        <h3 className="text-lg font-semibold text-gray-900">Asset Statistics</h3>
       </div>
-
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
-          icon={Target}
-          title="TOTAL ASSETS"
+          icon={Factory}
+          title="Total Assets"
           value={totalStats.totalAssets}
           filteredValue={filteredStats.totalAssets}
-          color="#ff3838"
+          color="#dc2626"
         />
         <StatCard
           icon={Globe}
-          title="TERRITORIES"
+          title="Countries"
           value={totalStats.totalCountries}
           filteredValue={filteredStats.totalCountries}
-          color="#00d9ff"
+          color="#2563eb"
         />
         <StatCard
-          icon={Crosshair}
-          title="CLASSIFICATIONS"
+          icon={BarChart3}
+          title="Asset Types"
           value={totalStats.totalAssetTypes}
           filteredValue={filteredStats.totalAssetTypes}
           color="#16a34a"
         />
         <StatCard
-          icon={Activity}
-          title="OPERATIONAL"
+          icon={Power}
+          title="Operational"
           value={totalStats.operationalAssets}
           filteredValue={filteredStats.operationalAssets}
-          color="#ffd000"
+          color="#eab308"
         />
       </div>
     </div>

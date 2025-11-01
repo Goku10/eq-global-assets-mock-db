@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, MapPin, Crosshair, Target, Building, Satellite, RotateCcw } from 'lucide-react';
+import { Search, MapPin, Factory, Filter, Building, Satellite, RotateCcw } from 'lucide-react';
 import { Asset } from '../types/assets';
 
 interface SearchPanelProps {
@@ -51,32 +51,30 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
   );
 
   return (
-    <div className="glass-panel p-6 mb-6">
+    <div className="bg-white rounded-lg shadow-md p-6 mb-6">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center">
-          <Target className="h-5 w-5 text-[#ffd000] mr-2" />
-          <h3 className="text-sm font-bold text-[#00d9ff] tracking-widest uppercase" style={{ fontFamily: 'Orbitron, sans-serif' }}>FILTERS</h3>
+          <Filter className="h-5 w-5 text-blue-600 mr-2" />
+          <h3 className="text-lg font-semibold text-gray-900">Search & Filter</h3>
         </div>
         <button
           onClick={onResetFilters}
-          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#00d9ff] glass-panel hover:bg-[#1e293b]/50 border border-[#00d9ff]/30 hover:border-[#ffd000]/60 transition-all uppercase tracking-wider"
+          className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
           title="Reset all filters"
-          style={{ fontFamily: 'Rajdhani, sans-serif' }}
         >
-          <RotateCcw className="h-3 w-3" />
-          RESET
+          <RotateCcw className="h-4 w-4" />
+          Reset
         </button>
       </div>
       
       <div className="space-y-4">
         {/* Search Input */}
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <input
             type="text"
-            placeholder="SEARCH ASSETS..."
-            className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] placeholder-[#00d9ff]/40 text-sm font-semibold tracking-wide uppercase"
-            style={{ fontFamily: 'Rajdhani, sans-serif' }}
+            placeholder="Search assets, locations, countries..."
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -84,14 +82,13 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
 
         {/* Country Filter */}
         <div className="relative">
-          <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+          <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <select
-            className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-sm font-semibold tracking-wide uppercase"
-            style={{ fontFamily: 'Rajdhani, sans-serif' }}
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white"
             value={selectedCountry}
             onChange={(e) => setSelectedCountry(e.target.value)}
           >
-            <option value="">ALL TERRITORIES</option>
+            <option value="">All Countries</option>
             {countries.map(country => (
               <option key={country} value={country}>{country}</option>
             ))}
@@ -100,14 +97,13 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
 
         {/* All Assets Dropdown */}
         <div className="relative">
-          <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+          <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <select
-            className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-sm font-semibold tracking-wide uppercase"
-            style={{ fontFamily: 'Rajdhani, sans-serif' }}
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white"
             value={selectedAsset}
             onChange={(e) => setSelectedAsset(e.target.value)}
           >
-            <option value="">ALL ASSETS</option>
+            <option value="">All Assets</option>
             {sortedAssets.map(asset => (
               <option key={asset.asset_id} value={asset.asset_id}>
                 {asset.basic_info.name} ({asset.basic_info.type}) - {asset.location.country}
@@ -118,14 +114,13 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
 
         {/* Asset Type Filter */}
         <div className="relative">
-          <Crosshair className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+          <Factory className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <select
-            className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-sm font-semibold tracking-wide uppercase"
-            style={{ fontFamily: 'Rajdhani, sans-serif' }}
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white"
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
           >
-            <option value="">ALL CLASSIFICATIONS</option>
+            <option value="">All Asset Types</option>
             {assetTypes.map(type => (
               <option key={type} value={type}>{type}</option>
             ))}
@@ -133,23 +128,22 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
         </div>
 
         {/* Satellite Coverage Filters */}
-        <div className="border-t border-[#00d9ff]/30 pt-4 mt-2">
+        <div className="border-t border-gray-200 pt-4 mt-2">
           <div className="flex items-center mb-3">
-            <Satellite className="h-4 w-4 text-[#ffd000] mr-2" />
-            <h4 className="text-xs font-bold text-[#00d9ff] tracking-widest uppercase" style={{ fontFamily: 'Orbitron, sans-serif' }}>SATELLITE COVERAGE</h4>
+            <Satellite className="h-4 w-4 text-blue-600 mr-2" />
+            <h4 className="text-sm font-semibold text-gray-900">Satellite Coverage</h4>
           </div>
 
           <div className="space-y-3">
             {/* Planet Data Coverage */}
             <div className="relative">
-              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <select
-                className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-xs font-semibold tracking-wide uppercase"
-                style={{ fontFamily: 'Rajdhani, sans-serif' }}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white text-sm"
                 value={selectedPlanetCoverage}
                 onChange={(e) => setSelectedPlanetCoverage(e.target.value)}
               >
-                <option value="">ALL PLANET COVERAGE</option>
+                <option value="">All Planet Coverage</option>
                 {planetCoverages.map(coverage => (
                   <option key={coverage} value={coverage}>{coverage}</option>
                 ))}
@@ -158,14 +152,13 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
 
             {/* Sentinel-1 Coverage */}
             <div className="relative">
-              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <select
-                className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-xs font-semibold tracking-wide uppercase"
-                style={{ fontFamily: 'Rajdhani, sans-serif' }}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white text-sm"
                 value={selectedSentinel1Coverage}
                 onChange={(e) => setSelectedSentinel1Coverage(e.target.value)}
               >
-                <option value="">ALL SENTINEL-1 COVERAGE</option>
+                <option value="">All Sentinel-1 Coverage</option>
                 {sentinel1Coverages.map(coverage => (
                   <option key={coverage} value={coverage}>{coverage}</option>
                 ))}
@@ -174,14 +167,13 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
 
             {/* Sentinel-2 Coverage */}
             <div className="relative">
-              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#00d9ff]" />
+              <Satellite className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <select
-                className="w-full pl-10 pr-4 py-2 glass-panel border border-[#00d9ff]/30 focus:border-[#ffd000] focus:outline-none text-[#00d9ff] appearance-none text-xs font-semibold tracking-wide uppercase"
-                style={{ fontFamily: 'Rajdhani, sans-serif' }}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white text-sm"
                 value={selectedSentinel2Coverage}
                 onChange={(e) => setSelectedSentinel2Coverage(e.target.value)}
               >
-                <option value="">ALL SENTINEL-2 COVERAGE</option>
+                <option value="">All Sentinel-2 Coverage</option>
                 {sentinel2Coverages.map(coverage => (
                   <option key={coverage} value={coverage}>{coverage}</option>
                 ))}
@@ -191,12 +183,12 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({
         </div>
 
         {/* Results Summary */}
-        <div className="text-xs text-[#00d9ff] glass-panel border border-[#00d9ff]/30 p-3 font-semibold tracking-wide" style={{ fontFamily: 'Rajdhani, sans-serif' }}>
-          <span className="text-[#00d9ff]/70 uppercase">SHOWING</span> <span className="font-bold text-[#ffd000] neon-yellow">{filteredAssets.length}</span> <span className="text-[#00d9ff]/70 uppercase">OF</span>{' '}
-          <span className="font-bold text-[#00d9ff]">{assets.length}</span> <span className="text-[#00d9ff]/70 uppercase">ASSETS</span>
+        <div className="text-sm text-gray-600 bg-gray-50 rounded-lg p-3">
+          Showing <span className="font-semibold text-blue-600">{filteredAssets.length}</span> of{' '}
+          <span className="font-semibold">{assets.length}</span> assets
           {selectedAsset && (
-            <div className="mt-2 text-[#ffd000] border-t border-[#00d9ff]/20 pt-2">
-              <span className="font-bold uppercase tracking-wider">SELECTED:</span> {
+            <div className="mt-1 text-blue-600">
+              <span className="font-medium">Selected:</span> {
                 assets.find(a => a.asset_id === selectedAsset)?.basic_info.name
               }
             </div>
