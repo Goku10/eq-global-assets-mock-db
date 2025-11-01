@@ -57,7 +57,7 @@ export const Dashboard: React.FC = () => {
           </div>
         </div>
         <div className="text-sm text-gray-600 hidden md:block">
-          Last updated: {database.metadata.last_updated}
+          Last updated: {new Date().toISOString().split('T')[0]}
         </div>
       </header>
 
