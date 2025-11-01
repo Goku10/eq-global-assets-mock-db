@@ -57,7 +57,7 @@ export const Dashboard: React.FC = () => {
           </div>
         </div>
         <div className="text-sm text-gray-600 hidden md:block">
-          Last updated: {new Date().toISOString().split('T')[0]}
+          Last updated: {import.meta.env.VITE_BUILD_DATE || new Date().toISOString().split('T')[0]}
         </div>
       </header>
 
